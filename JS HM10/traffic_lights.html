@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<style>
+#wrapper {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    align-items: center;    
+    margin: 0 auto;    
+    max-width: 450px;
+    height: 100%;
+    background-color: beige;
+}
+.traffic-light_wrapper {
+  
+  align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 350px;
+    height: 100%;
+    margin: 10px 15px;
+    border: 2px solid lightgrey;
+    border-radius: 0.5rem;
+ 
+}
+.traffic-light__red,
+.traffic-light__orange,
+.traffic-light__green {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+    background-color:grey;
+    border-radius: 50%;
+}
+.traffic-light_btn {
+    font-size: 20px;
+    width: 90px;
+    height: 100%;
+    padding: 40px 0px;
+    margin-right: 10px;    
+    border-radius: 0.5rem;
+    box-shadow: 5px 1px #8b8b8b;
+}
+
+</style>
+<body>
+    <p>Создать html-страницу со светофором и кнопкой, которая переключает светофор на следующий цвет</p>
+    <div id="wrapper" class="wrapper">
+        
+        <div class="traffic-light_wrapper">
+            <span class="traffic-light__red"></span>
+            <span class="traffic-light__orange"></span>
+            <span class="traffic-light__green"></span>
+        </div>        
+        <button id="button" class="traffic-light_btn">NEXT</button>
+        
+      </div>
+      <script src="traffic_lights.js"></script>
+</body>
+
+</html>
